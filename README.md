@@ -37,18 +37,17 @@ Dans le cadre d’une collaboration avec le réseau PNRIA et le Cancéropole de 
 Les données
 
 Pour le moment, le projet utilise uniquement des images de moelle osseuse, mais l’objectif à terme est d’intégrer également des données tabulaires afin de réaliser des analyses de survie.
-Les étapes du pipeline :
-
-    - Filtrage des zones d’intérêt
+**Les étapes du pipeline :**
+- Filtrage des zones d’intérêt
     Les images, très grandes et lourdes, ne peuvent pas être analysées pixel par pixel. Il est donc nécessaire de sélectionner des régions d’intérêt. Nous avons choisi de nous concentrer sur les zones présentant une densité suffisante de cellules : ni trop vide, ni trop dense au point de rendre les cellules indistinguables.
 
     Pour cela, les images sont ouvertes à l’aide de OpenSlide, qui permet d’obtenir des vues multi-résolution grâce à des cadrillages de différents niveaux de zoom. Le filtrage est ensuite réalisé à l’aide de filtres OpenCV, combinés à une technique de clustering basée sur k-means pour identifier les régions pertinentes.
 
-    - Détection des cellules avec un fine-tuning de Mask-RCNN
+- Détection des cellules avec un fine-tuning de Mask-RCNN
     Pour détecter les cellules, nous utilisons Mask-RCNN, un modèle d’apprentissage profond performant pour la segmentation d’objets dans les images. Mask-RCNN repose sur deux étapes principales : la génération de propositions de régions (Region Proposal Network) et la classification/segmentation de ces régions. Après un fine-tuning spécifique sur les données de moelle osseuse, nous avons obtenu d’excellents résultats de segmentation, avec une détection précise des contours et des zones des cellules.
 
-    - Classification des cellules avec PyRadiomics
+- Classification des cellules avec PyRadiomics
     Une fois les cellules détectées, leur classification est effectuée à l’aide de PyRadiomics, un outil qui permet d’extraire des caractéristiques avancées (texture, forme). 
 
-    - Explicabilité pour un retour du diagnostic aux médecins
+- Explicabilité pour un retour du diagnostic aux médecins
     Afin de rendre les résultats compréhensibles et exploitables par les médecins, nous avons intégré des outils d’explicabilité, notamment SHAP (SHapley Additive exPlanations). Ceux-ci permettent de fournir des explications claires sur les prédictions du modèle. Des outils de visualisation interactifs ont également été développés pour faciliter l’interprétation des résultats.
