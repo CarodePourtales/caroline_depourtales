@@ -5,9 +5,9 @@
 Bonjour !
 Tout d'abord, merci pour votre visite sur ce site. Je me présente : Caroline de Pourtalès, ingénieure généraliste diplômée de l'IMT Atlantique, titulaire d'un double-diplôme de master en Data Science à Polytech Nantes. Actuellement, je travaille depuis 3 ans au CNRS en tant qu’ingénieure d’étude en intelligence artificielle au sein du réseau PNRIA (https://www.ins2i.cnrs.fr/fr/reseau-des-ingenieurs-cnrs-du-programme-national-de-recherche-en-intelligence-artificielle-pnria).
 
-En dehors de mon travail, j'ai de nombreux hobbies : tricot, couture, voyages... Ce qui m'amuse particulièrement en ce moment, c'est d'animer des patrons de couture grâce à des modèles Image-to-Video. Je suis de nature très curieuse et, croyez-moi, ce genre de passe-temps apprend la patience !
+En dehors de mon travail, j'ai de nombreux hobbies : tricot, couture, voyages... Et ce qui m'amuse en ce moment, c'est d'animer des patrons de couture grâce à des modèles Image-to-Video. 
 
-Autodidacte par nature, je suis aussi sortie un peu de mon côté créatif dernièrement pour m’intéresser à la biologie. Par exemple, j’ai lu Tout ce que vous avez toujours voulu savoir sur le blob sans jamais oser le demander d’Audrey Dussutour, ainsi que Évolution, écologie et pandémies de Samuel Alizon. Ces lectures m'ont poussé à explorer davantage la bioinformatique. Merci aux éditions Dunod pour leurs livres clairs et concis ! J’espère bientôt obtenir un projet PNRIA dans ce domaine afin de mettre à contribution ces nouvelles connaissances.
+Je suis très curieuse et autodidacte, ainsi en ce moment, je suis m'intéresse à la biologie. Par exemple, j’ai lu "Tout ce que vous avez toujours voulu savoir sur le blob sans jamais oser le demander" d’Audrey Dussutour, ainsi que "Évolution, écologie et pandémies" de Samuel Alizon. Ces lectures m'ont poussé à explorer davantage la bioinformatique. Merci aux éditions Dunod pour leurs livres clairs et concis ! J’espère bientôt obtenir un projet PNRIA dans ce domaine afin de mettre à contribution ces nouvelles connaissances.
 
 Mon intérêt pour la biologie n'est pas nouveau, je m'intéresse énormément aux liens entre médecine et intelligence artificielle et je souhaite continuer à développer des solutions à long terme pour aider les médecins. 
 
