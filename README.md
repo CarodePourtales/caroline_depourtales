@@ -23,7 +23,7 @@ Jusqu'aujourd'hui j'ai participé à 7 projets de recherche. Sur chaque projet, 
 - **Entraînement d'IA** : OpenStack (cloud computing), SLURM  
 - **Traitement du langage naturel** : LLMs, application aux Graph Neural Networks  
 - **Apprentissage par renforcement** : Q-learning, Actor-Critic  
-- **Traitement d'images** : Open-CV, scikit-image, réseaux de neruones : classification, régression, détection d’objets, fine-tuning (ResNet, Yolo, Faster-RCNN)  
+- **Traitement d'images** : Open-CV, scikit-image, réseaux de neurones : classification, régression, détection d’objets, fine-tuning (ResNet, Yolo, Faster-RCNN)  
 
 - **Outil de collaboration** : Trello, Git, GitHub, GitLab  
 - **DevOps** : Docker  
