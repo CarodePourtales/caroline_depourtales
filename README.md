@@ -15,19 +15,19 @@ Mon intérêt pour la biologie n'est pas nouveau, je m'intéresse énormément a
 
 Jusqu'aujourd'hui j'ai participé à 7 projets de recherche. Sur chaque projet, je suis intervenue dans l'état de l'art, l'implémentation, l'entraînement et la formation des équipes à l'utilisation de l'outil.
 
-Langages informatiques : Python, R, bases de C++ \\
-Bases de données : SQL, MongoDB, sqlite \\
-Visualisation : bokeh, Dash (Plotly), matplotlib, RShiny \\
+- **Langages informatiques** : Python, R, bases de C++  
+- **Bases de données** : SQL, MongoDB, SQLite  
+- **Visualisation** : bokeh, Dash (Plotly), matplotlib, RShiny  
 
-Libraries de Machine Learning / Deep Learning : Scikit-learn, Pytorch (torch, torch_geometric, torch_lightning), Keras, Spacy, nltk, transformers \\
-Traitement d'image : Open-CV, scikit-image \\
-Entraînement d'IA : OpenStack (cloud computing), SLURM \\
-Traitement du langage naturel : LLMs, application aux Graph Neural Networks. \\
-Apprentissage par renforcement : Q-learning, Actor-Critic \\
-Traitement d'images : classification, régression, détection d’objets, fine-tuning (ResNet, Yolo, Faster-RCNN) \\
+- **Libraries de Machine Learning / Deep Learning** : Scikit-learn, Pytorch (torch, torch_geometric, torch_lightning), Keras, Spacy, nltk, transformers  
+- **Traitement d'image** : Open-CV, scikit-image  
+- **Entraînement d'IA** : OpenStack (cloud computing), SLURM  
+- **Traitement du langage naturel** : LLMs, application aux Graph Neural Networks  
+- **Apprentissage par renforcement** : Q-learning, Actor-Critic  
+- **Traitement d'images** : classification, régression, détection d’objets, fine-tuning (ResNet, Yolo, Faster-RCNN)  
 
-Outil de collaboration : Trello, Git, GitHub, GitLab
-DevOps : Docker
+- **Outil de collaboration** : Trello, Git, GitHub, GitLab  
+- **DevOps** : Docker  
 
 ## Détail de certains projets
 
