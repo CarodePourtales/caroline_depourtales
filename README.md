@@ -36,7 +36,7 @@ Jusqu'aujourd'hui j'ai participé à 7 projets de recherche. Sur chaque projet, 
 Dans le cadre d’une collaboration avec le réseau PNRIA et le Cancéropole de Toulouse, un outil de diagnostic a été développé pour améliorer l’analyse d’images médicales et la prise de décision clinique. Ce projet s’appuie sur des technologies avancées en intelligence artificielle et en traitement d’images, intégrées dans un pipeline Python.
 
 
-**Les données**
+**Les données :**
 Pour le moment, le projet utilise uniquement des images de moelle osseuse, mais l’objectif à terme est d’intégrer également des données tabulaires afin de réaliser des analyses de survie.
 
 
