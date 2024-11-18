@@ -34,9 +34,12 @@ DevOps : Docker
 ### *Diagnostic de la Leucémie Myéloïde Aiguë* 
 
 Dans le cadre d’une collaboration avec le réseau PNRIA et le Cancéropole de Toulouse, un outil de diagnostic a été développé pour améliorer l’analyse d’images médicales et la prise de décision clinique. Ce projet s’appuie sur des technologies avancées en intelligence artificielle et en traitement d’images, intégrées dans un pipeline Python.
-Les données
 
+
+**Les données**
 Pour le moment, le projet utilise uniquement des images de moelle osseuse, mais l’objectif à terme est d’intégrer également des données tabulaires afin de réaliser des analyses de survie.
+
+
 **Les étapes du pipeline :**
 - Filtrage des zones d’intérêt
     Les images, très grandes et lourdes, ne peuvent pas être analysées pixel par pixel. Il est donc nécessaire de sélectionner des régions d’intérêt. Nous avons choisi de nous concentrer sur les zones présentant une densité suffisante de cellules : ni trop vide, ni trop dense au point de rendre les cellules indistinguables.
