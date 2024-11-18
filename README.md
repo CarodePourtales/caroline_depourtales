@@ -53,3 +53,7 @@ Pour le moment, le projet utilise uniquement des images de moelle osseuse, mais 
 
 - Explicabilité pour un retour du diagnostic aux médecins
     Afin de rendre les résultats compréhensibles et exploitables par les médecins, nous avons intégré des outils d’explicabilité, notamment SHAP (SHapley Additive exPlanations). Ceux-ci permettent de fournir des explications claires sur les prédictions du modèle. Des outils de visualisation interactifs ont également été développés pour faciliter l’interprétation des résultats.
+
+
+  Bennis, Achraf1; Leleux, Philippe1; Canali, Alban2; Pourtales, Caroline De1; Mouysset, Sandrine1; Simoncini, David1; Brousset, Pierre3; Frenois, Francois-Xavier3; Recher, Christian4; Alliot, Jean-Marc1; Rieu, Jean-Baptiste2; Bertoli, Sarah4. PB1764: SEGMENTATION AND CLASSIFICATION OF BONE MARROW CELLS FROM MULTI-PRECISION NUMERIZATION OF BONE MARROW SMEARS (BMS) FROM PATIENTS WITH ACUTE MYELOID LEUKEMIA (AML) USING AI TECHNIQUES. HemaSphere 7(S3):p e5127496, August 2023. | DOI: 10.1097/01.HS9.0000973912.51274.96
+  
