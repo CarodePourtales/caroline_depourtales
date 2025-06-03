@@ -5,15 +5,15 @@
 Bonjour !
 Tout d'abord, merci pour votre visite sur ce site. Je me présente : Caroline de Pourtalès, ingénieure généraliste diplômée de l'IMT Atlantique, titulaire d'un double-diplôme de master en Data Science à Polytech Nantes. Actuellement, je travaille depuis 3 ans au CNRS en tant qu’ingénieure d’étude en intelligence artificielle au sein du réseau PNRIA (https://www.ins2i.cnrs.fr/fr/reseau-des-ingenieurs-cnrs-du-programme-national-de-recherche-en-intelligence-artificielle-pnria).
 
-En dehors de mon travail, j'ai de nombreux hobbies : tricot, couture, voyages... Et ce qui m'amuse en ce moment, c'est d'animer des patrons de couture grâce à des modèles Image-to-Video. 
+En dehors de mon travail, j'ai de nombreux hobbies : tricot, couture, voyages... 
 
-Je suis très curieuse et autodidacte, ainsi en ce moment, je suis m'intéresse à la biologie. Par exemple, j’ai lu "Tout ce que vous avez toujours voulu savoir sur le blob sans jamais oser le demander" d’Audrey Dussutour, ainsi que "Évolution, écologie et pandémies" de Samuel Alizon. Ces lectures m'ont poussé à explorer davantage la bioinformatique. Merci aux éditions Dunod pour leurs livres clairs et concis ! J’espère bientôt obtenir un projet PNRIA dans ce domaine afin de mettre à contribution ces nouvelles connaissances.
+Je suis très curieuse et autodidacte, ainsi en ce moment, je m'intéresse à la biologie. Par exemple, j’ai lu "Tout ce que vous avez toujours voulu savoir sur le blob sans jamais oser le demander" d’Audrey Dussutour, ainsi que "Évolution, écologie et pandémies" de Samuel Alizon. Ces lectures m'ont poussé à explorer davantage la bioinformatique. Merci aux éditions Dunod pour leurs livres clairs et concis ! J’espère bientôt obtenir un projet PNRIA dans ce domaine afin de mettre à contribution ces nouvelles connaissances.
 
 Mon intérêt pour la biologie n'est pas nouveau, je m'intéresse énormément aux liens entre médecine et intelligence artificielle et je souhaite continuer à développer des solutions à long terme pour aider les médecins. 
 
 ## Mes compétences
 
-Jusqu'aujourd'hui j'ai participé à 7 projets de recherche. Sur chaque projet, je suis intervenue dans l'état de l'art, l'implémentation, l'entraînement et la formation des équipes à l'utilisation de l'outil.
+Jusqu'aujourd'hui j'ai participé à 9 projets de recherche. Sur chaque projet, je suis intervenue dans l'état de l'art, l'implémentation, l'entraînement et la formation des équipes à l'utilisation de l'outil.
 
 - **Langages informatiques** : Python, R, bases de C++  
 - **Bases de données** : SQL, MongoDB, SQLite  
