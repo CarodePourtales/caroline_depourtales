@@ -17,16 +17,16 @@ Jusqu'aujourd'hui j'ai participé à 9 projets de recherche. Sur chaque projet, 
 
 - **Langages informatiques** : Python, R, bases de C++  
 - **Bases de données** : SQL, MongoDB, SQLite  
-- **Visualisation** : bokeh, Dash (Plotly), matplotlib, RShiny  
+- **Visualisation** : Bokeh, Dash (Plotly), matplotlib, RShiny  
 
-- **Libraries de Machine Learning / Deep Learning** : Scikit-learn, Pytorch (torch, torch_geometric, torch_lightning), Keras, Spacy, nltk, transformers  
+- **Libraries de Machine Learning / Deep Learning** : Scikit-learn, Pytorch (torch, torch_geometric, lightning), Keras, Spacy, nltk, transformers (HuggingFace)
 - **Entraînement d'IA** : OpenStack (cloud computing), SLURM  
 - **Traitement du langage naturel** : LLMs, application aux Graph Neural Networks  
 - **Apprentissage par renforcement** : Q-learning, Actor-Critic  
 - **Traitement d'images** : Open-CV, scikit-image, réseaux de neurones : classification, régression, détection d’objets, fine-tuning (ResNet, Yolo, Faster-RCNN)  
 
-- **Outil de collaboration** : Trello, Git, GitHub, GitLab  
-- **DevOps** : Docker  
+- **Outil de collaboration** : Trello, GitHub, GitLab  
+- **DevOps** : Docker, CI/CD
 
 ## Détail de certains projets
 
@@ -56,4 +56,7 @@ Pour le moment, le projet utilise uniquement des images de moelle osseuse, mais 
 
 
   Bennis, Achraf1; Leleux, Philippe1; Canali, Alban2; Pourtales, Caroline De1; Mouysset, Sandrine1; Simoncini, David1; Brousset, Pierre3; Frenois, Francois-Xavier3; Recher, Christian4; Alliot, Jean-Marc1; Rieu, Jean-Baptiste2; Bertoli, Sarah4. PB1764: SEGMENTATION AND CLASSIFICATION OF BONE MARROW CELLS FROM MULTI-PRECISION NUMERIZATION OF BONE MARROW SMEARS (BMS) FROM PATIENTS WITH ACUTE MYELOID LEUKEMIA (AML) USING AI TECHNIQUES. HemaSphere 7(S3):p e5127496, August 2023. | DOI: 10.1097/01.HS9.0000973912.51274.96
-  
+
+
+
+
