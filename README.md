@@ -34,24 +34,18 @@ Jusqu'aujourd'hui j'ai participé à 9 projets de recherche. Sur chaque projet, 
 
 Dans le cadre d’une collaboration avec le réseau PNRIA et le Cancéropole de Toulouse, un outil de diagnostic a été développé pour améliorer l’analyse d’images médicales et la prise de décision clinique. Ce projet s’appuie sur des technologies avancées en intelligence artificielle et en traitement d’images, intégrées dans un pipeline Python.
 
-
-**Les données :**
-Pour le moment, le projet utilise uniquement des images de moelle osseuse, mais l’objectif à terme est d’intégrer également des données tabulaires afin de réaliser des analyses de survie.
-
-
-**Les étapes du pipeline :**
-- Filtrage des zones d’intérêt
+- **Filtrage des zones d’intérêt**
     Les images, très grandes et lourdes, ne peuvent pas être analysées pixel par pixel. Il est donc nécessaire de sélectionner des régions d’intérêt. Nous avons choisi de nous concentrer sur les zones présentant une densité suffisante de cellules : ni trop vide, ni trop dense au point de rendre les cellules indistinguables.
 
     Pour cela, les images sont ouvertes à l’aide de OpenSlide, qui permet d’obtenir des vues multi-résolution grâce à des cadrillages de différents niveaux de zoom. Le filtrage est ensuite réalisé à l’aide de filtres OpenCV, combinés à une technique de clustering basée sur k-means pour identifier les régions pertinentes.
 
-- Détection des cellules avec un fine-tuning de Mask-RCNN
+- **Détection des cellules avec un fine-tuning de Mask-RCNN**
     Pour détecter les cellules, nous utilisons Mask-RCNN, un modèle d’apprentissage profond performant pour la segmentation d’objets dans les images. Mask-RCNN repose sur deux étapes principales : la génération de propositions de régions (Region Proposal Network) et la classification/segmentation de ces régions. Après un fine-tuning spécifique sur les données de moelle osseuse, nous avons obtenu d’excellents résultats de segmentation, avec une détection précise des contours et des zones des cellules.
 
-- Classification des cellules avec PyRadiomics
+- **Classification des cellules avec PyRadiomics**
     Une fois les cellules détectées, leur classification est effectuée à l’aide de PyRadiomics, un outil qui permet d’extraire des caractéristiques avancées (texture, forme). 
 
-- Explicabilité pour un retour du diagnostic aux médecins
+- **Explicabilité pour un retour du diagnostic aux médecins**
     Afin de rendre les résultats compréhensibles et exploitables par les médecins, nous avons intégré des outils d’explicabilité, notamment SHAP (SHapley Additive exPlanations). Ceux-ci permettent de fournir des explications claires sur les prédictions du modèle. Des outils de visualisation interactifs ont également été développés pour faciliter l’interprétation des résultats.
 
 
@@ -59,4 +53,53 @@ Pour le moment, le projet utilise uniquement des images de moelle osseuse, mais 
 
 
 
+### *Projet ‘AUTOFILL’ pour le PEPR TooFast avec le CEA"* : 
+Génération de signaux  de caractérisation de nanomatériaux. 
+Développement d’un **Pair-Variational Autoencoder** pour la traduction d’un signal dans une autre modalité.
+
+Le projet AUTOFILL vise à **générer** et **traduire** automatiquement des signaux expérimentaux de caractérisation de nanomatériaux entre différentes modalités (par exemple, SAXS ↔ LES). Pour cela, nous avons implémenté un modèle inspiré du papier *Pair-Variational Autoencoders (PairVAE) for Linking and Cross-Reconstruction* :contentReference[oaicite:0]{index=0} :
+
+- **Architecture à double VAE couplé** : deux autoencodeurs variationnels distincts (un pour chaque modalité) partagent un espace latent commun.  
+  - Chaque encodeur (modalité A ou B) apprend à projeter le signal observé \(x_A\) ou \(x_B\) dans un vecteur latent \(z\).  
+  - Le même vecteur latent \(z\) alimente les deux décodeurs, permettant à chacun de **reconstruire** à la fois sa modalité d’origine et, via un mécanisme de cross-reconstruction, la modalité opposée.  
+  - L’objectif est de forcer la **cohérence croisée** : à partir d’un signal \(x_A\), l’encodeur A génère \(z\), puis le décodeur B doit produire un signal \(\hat{x}_B\) réaliste dans la modalité B et vice-versa :contentReference[oaicite:1]{index=1}.
+
+- **Fonctions de perte** :  
+  1. **Reconstruction intra-modale** : chaque décodeur minimise la divergence entre \(x_A\) et \(\hat{x}_A\) (resp. \(x_B\) et \(\hat{x}_B\)).  
+  2. **Cross-reconstruction** : le décodeur de chaque modalité doit également reconstruire la modalité opposée (\(\hat{x}_{B|A}\) et \(\hat{x}_{A|B}\)), ce qui renforce l’alignement des représentations latentes.  
+  3. **Régularisation KL** : les distributions latentes apprises sont contraintes à rester proches d’une distribution prior (classement gaussien), garantissant que \(z\) encode efficacement l’information commune aux deux signaux :contentReference[oaicite:2]{index=2}.
+
+- **Entraînement et résultats** :  
+  - Données simulées : génération de jeux de signaux synthétiques pour chaque modalité à partir de bibliothèques de métabolites et motifs cristallins.  
+  - Amélioration de la **précision de traduction** : comparaison des signaux reconstruits en cross-modalité (par exemple, RMN reconstruit depuis un spectre SAXS) versus méthodes classiques de correspondance un à un.  
+  - Visualisation des espaces latents : exploration des embeddings \(z\) pour confirmer la **séparation et l’organisation** des classes de nanomatériaux (polymorphes, morphologies) indépendamment de la modalité d’entrée.
+
+- **Objectif appliqué** :  
+  1. **Accélérer la caractérisation** : dans le cadre du PEPR TooFast, réduire la nécessité d’acquérir plusieurs jeux de mesures expérimentales en prédisant un signal manquant à partir d’un autre (ex. éviter une expérimentation coûteuse si un signal peut être reconstruit).  
+  2. **Compréhension physico-chimique** : analyser les correspondances entre signatures spectrales et structures cristallines pour identifier rapidement de nouveaux nanomatériaux à propriétés ciblées (optiques, catalytiques, magnétiques).
+
+*Références*  
+1. G. Hajizadegan et al., “Pair-Variational Autoencoders for Linking and Cross-Reconstruction,” *JACS Au*, 2023. :contentReference[oaicite:3]{index=3}  
+
+### *Projet ‘SARU’  en Éthologie et Primatologie* :  
+Étude automatisée des comportements sociaux de macaques japonais à partir d’enregistrements vidéo.  
+- **Détection et classification** des individus dans les séquences vidéos à l’aide de YOLO et YOLO-CLS.
+    - Utilisation de la bibliothèque [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) pour la détection d’instances de macaques dans chaque image.  
+    - Jeu de données annoté manuellement (bords de boîtes englobantes autour des macaques) pour le fine-tuning du modèle YOLOv11.  
+    - Application de techniques d’**augmentation de données** durant l’entraînement
+- **Caractérisation fine des postures et comportements** via l’outil LabGym, utilisé pour analyser les dynamiques corporelles et interactions sociales.  
+- **Tracking multi-individus** robuste avec BOTSort, permettant de suivre précisément chaque primate au fil du temps, malgré les occlusions et déplacements complexes.
+    - Adoption de **BOTSort**, un algorithme d’association en temps réel reposant sur les résultats de YOLO et une **métrique appearance-based** :  
+    - Association des détections sur plusieurs frames consécutives en utilisant à la fois la position prévue (via Kalman Filter) et un descripteur visuel (histogramme de couleurs du pelage) pour distinguer les macaques semblables.  
+    - Gestion des occlusions partielles et totales :  
+    - Si un individu disparaît temporairement (sous un obstacle ou dans l’ombre), BOTSort maintient la trace du même ID jusqu’à réapparition, grâce à la prédiction du déplacement.  
+    - Réidentification rapide même lorsque plusieurs singes se croisent ou se chevauchent.  
+    - Résultat : suivi continu (bounding box + ID unique) de chaque primate sur plusieurs minutes, permettant de reconstruire des **trajectoires individuelles** (distance parcourue, zones d’activité préférentielles) et des **interactions sociales spatialisées** (proximité, affinités de groupe).
+
+
+### *Projet ‘LibSpecDL’ en médecine et biologie* : 
+Développement d’un pipeline pour la **quantification automatisée des signaux de spectroscopie par résonance magnétique (MRS)**.  
+- **Simulation de spectres** à partir de bases de données de métabolites, pour générer des signaux synthétiques réalistes adaptés à l'entraînement de modèles.  
+- Utilisation de **régressions multivariées** pour estimer les concentrations métaboliques à partir des spectres expérimentaux.  
+- Objectif : améliorer la robustesse et la précision du diagnostic par MRS, tout en réduisant la dépendance à l’expertise humaine dans l’interprétation des signaux.
 
