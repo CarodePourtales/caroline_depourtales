@@ -11,22 +11,25 @@ Je suis très curieuse et autodidacte, ainsi en ce moment, je m'intéresse à la
 
 Mon intérêt pour la biologie n'est pas nouveau, je m'intéresse énormément aux liens entre médecine et intelligence artificielle et je souhaite continuer à développer des solutions à long terme pour aider les médecins. 
 
-## Mes compétences
+## Stack technique
 
-Jusqu'aujourd'hui j'ai participé à 9 projets de recherche. Sur chaque projet, je suis intervenue dans l'état de l'art, l'implémentation, l'entraînement et la formation des équipes à l'utilisation de l'outil.
+**Général** : Linux,  Super Calculateurs, Multi-GPU
 
-- **Langages informatiques** : Python, R, bases de C++  
-- **Bases de données** : SQL, MongoDB, SQLite  
-- **Visualisation** : Bokeh, Dash (Plotly), matplotlib, RShiny  
+**Langages** : Python, C++, R
 
-- **Libraries de Machine Learning / Deep Learning** : Scikit-learn, Pytorch (torch, torch_geometric, lightning), Keras, Spacy, nltk, transformers (HuggingFace)
-- **Entraînement d'IA** : OpenStack (cloud computing), SLURM  
-- **Traitement du langage naturel** : LLMs, application aux Graph Neural Networks  
-- **Apprentissage par renforcement** : Q-learning, Actor-Critic  
-- **Traitement d'images** : Open-CV, scikit-image, réseaux de neurones : classification, régression, détection d’objets, fine-tuning (ResNet, Yolo, Faster-RCNN)  
+**Deep Learning** :  NLP, Transformers,, LLM, RNN, Computer Vision (YOLO, U-Net, VIT, ViVIT, ResNet, Faster-RCNN, Mask-RCNN), Multi-modal (CLIP, BLIP)
 
-- **Outil de collaboration** : Trello, GitHub, GitLab  
-- **DevOps** : Docker, CI/CD
+**Frameworks, Librairies & Technologies** : PyTorch (torch-geometric, Lightning), scikit-learn, HuggingFace, NLTK, Spacy, OpenCV, MLFlow, Uv
+
+**Données** : Pandas, SQL, Numpy, HDF5
+
+**Visualisation** : matplotlib, Bokeh, Plotly, Shiny, Seaborn
+
+**Ops** : Github, Gitlab, Docker, CI/CD
+
+**Gestion de projets scientifiques** :
+Pilotage de projets multidisciplinaires, élaboration de l’état de l’art, problématisation des enjeux de recherche, rédaction d’articles scientifiques, encadrement de chercheurs/juniors, coordination et suivi de projet.
+
 
 ## Détail de certains projets
 
@@ -94,7 +97,10 @@ Le projet AUTOFILL vise à **générer** et **traduire** automatiquement des sig
 
 ### *Projet ‘LibSpecDL’ en médecine et biologie* : 
 Développement d’un pipeline pour la **quantification automatisée des signaux de spectroscopie par résonance magnétique (MRS)**.  
-- **Simulation de spectres** à partir de bases de données de métabolites, pour générer des signaux synthétiques réalistes adaptés à l'entraînement de modèles.  Utilisation de FS-MRS.
+- **Simulation de spectres** à partir de bases de données de métabolites, pour générer des signaux synthétiques réalistes adaptés à l'entraînement de modèles.  Utilisation de FSL-MRS.
 - Utilisation de **régressions multivariées** pour estimer les concentrations métaboliques à partir des spectres expérimentaux.  
 - Objectif : améliorer la robustesse et la précision du diagnostic par MRS, tout en réduisant la dépendance à l’expertise humaine dans l’interprétation des signaux.
+
+*Références*  
+Clarke WT, Stagg CJ, Jbabdi S. FSL-MRS: An end-to-end spectroscopy analysis package. Magnetic Resonance in Medicine 2021;85:2950–2964 doi: 10.1002/mrm.28630.
 
